@@ -31,12 +31,12 @@ export default async function Home() {
 
   return (
     <>
-      <Header />
+      <Header sidebarData={JSON.parse(sidebarData)} />
       <div style={{ display: "flex", minHeight: "80vh" }}>
-        <Sidebar data={sidebarData} />
-        <Main data={mainData} />
+        <Sidebar data={JSON.parse(sidebarData)} />
+        <Main data={JSON.parse(mainData)} />
       </div>
-      <Footer />
+      <Footer sidebarData={JSON.parse(sidebarData)} />
     </>
   );
 }
