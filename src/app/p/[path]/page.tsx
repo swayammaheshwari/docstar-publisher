@@ -55,15 +55,17 @@ export default async function Home({
   params,
   searchParams,
 }: {
-  params: { path: string };
-  searchParams: { collectionId?: string };
+  params: Promise<{ path: string }>;
+  searchParams: Promise<{ collectionId?: string }>;
 }) {
   let sidebarApiData: SidebarApiData | null = null;
   let mainData = "";
   let docProperties: DocProperties | null = null;
 
-  const collectionId = searchParams.collectionId;
-  const path = decodeURIComponent(params.path);
+  const resolvedSearchParams = await searchParams;
+  const resolvedParams = await params;
+  const collectionId = resolvedSearchParams.collectionId;
+  const path = decodeURIComponent(resolvedParams.path);
 
   if (!collectionId) {
     return (
