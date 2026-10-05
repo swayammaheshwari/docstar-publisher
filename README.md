@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Docstar Publisher
 
-## Getting Started
+Write docs in Markdown, see them live, and publish to GitHub Pages with one push. Open source, MIT licensed.
 
-First, run the development server:
+## Quick start
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Click **Use this template** (or fork), then clone.
+2. `npm install`
+3. `npm run dev` — live preview at the printed URL.
+4. Add or edit `.md` files in `docs/`. The sidebar builds itself.
+5. Push to `main`. In **Settings → Pages**, set **Source** to **GitHub Actions** (one time).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your docs go live at `https://<user>.github.io/<repo>/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command           | What it does                  |
+| ----------------- | ----------------------------- |
+| `npm run dev`     | Live preview with hot reload  |
+| `npm run build`   | Build static site to `docs/.vitepress/dist` |
+| `npm run preview` | Serve the built site locally  |
 
-## Learn More
+## Docs
 
-To learn more about Next.js, take a look at the following resources:
+See [docs/](docs/) — or the live site once deployed. AI agents: read [AGENTS.md](AGENTS.md).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT](LICENSE)
