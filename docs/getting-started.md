@@ -20,8 +20,8 @@ Open the printed URL. Edits to any `.md` file in `docs/` appear instantly.
 
 ## 3. Write
 
-Add a file such as `docs/guide/my-page.md`. It shows up in the sidebar automatically. See [Writing Docs](/guide/writing-docs).
+Add a file such as `docs/my-page.md`. It shows up in the sidebar automatically. See [Writing Docs](/docs/writing-docs).
 
 ## 4. Publish
 
-Push to `main`. See [Deploying](/guide/deploying) for the one-time GitHub Pages setting.
+Push to `main`. See [Deploying](/docs/deploying) for the one-time GitHub Pages setting.

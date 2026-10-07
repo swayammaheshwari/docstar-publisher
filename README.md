@@ -7,7 +7,7 @@ Write docs in Markdown, see them live, and publish to GitHub Pages with one push
 1. Click **Use this template** (or fork), then clone.
 2. `npm install`
 3. `npm run dev` — live preview at the printed URL.
-4. Add or edit `.md` files in `docs/`. The sidebar builds itself.
+4. Add `.md` files to `docs/`, posts to `blog/`, or an OpenAPI `.yml` to `api-hub/`. The sidebar builds itself.
 5. Push to `main`. In **Settings → Pages**, set **Source** to **GitHub Actions** (one time).
 
 Your docs go live at `https://<user>.github.io/<repo>/`.
@@ -17,7 +17,7 @@ Your docs go live at `https://<user>.github.io/<repo>/`.
 | Command           | What it does                  |
 | ----------------- | ----------------------------- |
 | `npm run dev`     | Live preview with hot reload  |
-| `npm run build`   | Build static site to `docs/.vitepress/dist` |
+| `npm run build`   | Build static site to `.vitepress/dist` |
 | `npm run preview` | Serve the built site locally  |
 
 ## Docs
