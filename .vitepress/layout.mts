@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { parse } from 'yaml'
 
-export type FolderType = 'docs' | 'blog' | 'api'
+export type FolderType = 'docs' | 'blog' | 'api' | 'changelog' | 'faq'
 
 export type Layout = {
   type: FolderType
@@ -17,7 +17,7 @@ export type Layout = {
   explicit: boolean
 }
 
-const TYPES: FolderType[] = ['docs', 'blog', 'api']
+const TYPES: FolderType[] = ['docs', 'blog', 'api', 'changelog', 'faq']
 
 export const isYaml = (name: string) => /\.ya?ml$/i.test(name)
 
